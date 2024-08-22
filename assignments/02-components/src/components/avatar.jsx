@@ -15,14 +15,17 @@ function Avatar({ img, name, title, bgcolor,textColor }) {
         }}>
             <img style={{ 
                 border: "2px solid black",
-                 width:"100px",
-                  borderRadius:"50%", }} src={img} alt="user avatar" />
-            <div style={{ flexGrow: 1 }}>
+                width:"100px",
+                borderRadius:"50%", }}
+                src={img} alt="user avatar" />
+            <div style={{ 
+                flexGrow: 1 }}>
                 <h2 className="username">{name}</h2>
                 <h3 className="title">{title}</h3>
             </div>
         </div>
     )
 }
+
 
 export default Avatar
