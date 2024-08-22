@@ -1,7 +1,7 @@
 function Avatar({ img, name, title, bgcolor,textColor }) {
     return (
         <div style={{
-            border: "2px solid black",
+            border: "2px solid black",  
             display: "flex",
             borderRadius: "150px",
             margin: "auto",
