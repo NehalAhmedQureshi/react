@@ -8,5 +8,4 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 Deployed URLS =>
-- [By-versel](https://react-125.vercel.app/)
-- [By-Firebase](https://firestore-database-by-nehal.web.app/)
+- [By-versel](https://react-6ujw.vercel.app/)
