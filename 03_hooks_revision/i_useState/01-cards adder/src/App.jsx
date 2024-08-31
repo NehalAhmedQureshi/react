@@ -11,16 +11,17 @@ function App() {
   const [text, settextvalue] = useState(null)
   const [fontcolorvalue, setfontcolorvalue] = useState("black")
   const [bgcolorvalue, setBgcolorvalue] = useState('black')
-  const [ card , setcards ] = useState([])
+  const [card, setcards] = useState([])
 
   const cardDataAdder = () => {
     console.log('hi')
     const cardData = {
-    text : text,
-    bgcolor:bgcolorvalue,
-    textcolor:fontcolorvalue,
-    createdAt : Date.now()}
-    setcards([...card , cardData])
+      text: text,
+      bgcolor: bgcolorvalue,
+      textcolor: fontcolorvalue,
+      createdAt: Date.now()
+    }
+    setcards([...card, cardData])
     console.log(card)
 
   }
@@ -68,13 +69,14 @@ function App() {
         online
       />
 
-      {card.map((data,index)=>(
-        <div key={index} className="card" style={{
-          backgroundColor:data.bgcolor,
-          color:data.textcolor,
-        }} >{data.text} <i></i></div>
-      )) }
-
+      <div className="cards">
+        {card.map((data, index) => (
+          <div key={index} className="card" style={{
+            backgroundColor: data.bgcolor,
+            color: data.textcolor,
+          }} >{data.text} <i></i></div>
+        ))}
+      </div>
     </div>
   )
 }
