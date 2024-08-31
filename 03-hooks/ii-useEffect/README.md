@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 
 # Deployed Link
 
-- [BY-VERSEL](https://react-03-hooks-ii.vercel.app/)
+- [BY-VERSEL](https://react-weatherapp-lime.vercel.app/)
