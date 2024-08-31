@@ -1,14 +1,13 @@
-function CustomInput({placeHolder,bgcolor,className,onchange,inputValue,fontcolor,inputtype,inputid,}) {
+function CustomInput({placeHolder,bgcolor,className,onchange,value}) {
     return(
     <input
-        value={inputValue?inputValue:null}
-        id={inputid?inputid:null}
+        value={value?value:null}
         onChange={onchange?onchange:null}
-        type={inputtype?inputtype:"text"}
+        type="text"
         placeholder={placeHolder?placeHolder:""}
         className={className?className:""}
         style={{
-            width:"40%",
+            width:"30%",
             height:'30px',
             margin:"5px",
             fontSize:"16px",
@@ -18,8 +17,7 @@ function CustomInput({placeHolder,bgcolor,className,onchange,inputValue,fontcolo
             textTransform:"capitalize",
             borderRadius:"25px",
             boxShadow:'2px 2px 10px black',
-            border:'none',
-            color:fontcolor?fontcolor:"black",
+            border:'none'
         }}
     />
 )
